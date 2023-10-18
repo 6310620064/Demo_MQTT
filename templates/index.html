@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Data Display</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Data Display</h1>
+        <section>
+            <h3>Humidity Data</h3>
+            <table id="humidity-table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Sensor</th>
+                        <th>Date/Time</th>
+                        <th>Humidity</th>
+                    </tr>
+                </thead>
+                <tbody id="humidity-data"></tbody>
+            </table>
+        </section>
+
+        <section>
+            <h3>Temperature Data</h3>
+            <table id="temperature-table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Sensor</th>
+                        <th>Date/Time</th>
+                        <th>Temperature</th>
+                    </tr>
+                </thead>
+                <tbody id="temperature-data"></tbody>
+            </table>
+        </section>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
